@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+
 namespace Assignment1
 {
     class Program
@@ -12,10 +13,6 @@ namespace Assignment1
             int []sortedArray = SortAndCountInversions(input, out inversions);
 
             Console.WriteLine("Inversions: {0}",inversions);
-            //foreach(int i in sortedArray)
-            //{
-            //    Console.Write("{0} ", i);
-            //}
             Console.ReadKey();
         }
 
@@ -48,7 +45,6 @@ namespace Assignment1
                 if (a[i] < b[j])
                 {
                     mergedArray.Add(a[i++]);
-
                 }
                 else
                 {
@@ -66,6 +62,5 @@ namespace Assignment1
             }
             return mergedArray.ToArray();
         }
-        
     }
 }
